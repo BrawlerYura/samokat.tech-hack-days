@@ -55,7 +55,7 @@ $(document).ready(function () {
     });
     $("#fast_search_button").click(async function (){
         user_input = $("#fast_search").val()
-        requestIng = "http://127.0.0.1:5000/find_users?key=" + user_input
+        requestIng = "http://90.188.89.254:5000/find_users?key=" + user_input
         let request = await fetch(requestIng)
         let response = await request.json();
         console.log(response)
